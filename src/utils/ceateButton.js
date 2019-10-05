@@ -7,6 +7,7 @@ class ButtonContent {
     if (id) {
       this.btn.id = `${id}`;
     }
+    this.btn.classList = "button";
     this.btn.value = `${value}`;
     this.btn.onclick = fn;
     return this.btn;
