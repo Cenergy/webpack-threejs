@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        height: 100%;
+        display: flex; /*设为伸缩容器*/
+        flex-flow: row; /*伸缩项目单行排列*/
+      }
+      #app {
+        width: 80%; /*固定宽度*/
+      }
+      #content {
+        flex: 1; /*这里设置为占比1，填充满剩余空间*/
+        border: 2px solid #ff4400;
+        box-sizing: border-box;
+      }
+      #content input {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="app"></div>
+      <div id="content">目录:<br /></div>
+    </div>
+  </body>
+</html>
