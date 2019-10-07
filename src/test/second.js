@@ -1,9 +1,10 @@
 import * as dat from "dat.gui";
 import * as Stats from "stats.js";
 import * as THREE from "three";
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 //声明一些全局变量
-var renderer,
+let renderer,
   camera,
   scene,
   stats,
@@ -11,7 +12,7 @@ var renderer,
   gui,
   rotate = true;
 //声明一些几何体模型变量
-var box, circle, cone, cylinder, sphere, plane, torus;
+let box, circle, cone, cylinder, sphere, plane, torus;
 const appWidth = window.innerWidth * 0.79;
 const appHeight = window.innerHeight;
 const app = document.getElementById("app");

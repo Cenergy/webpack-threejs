@@ -1,6 +1,7 @@
 class ButtonContent {
   constructor(options) {
     const { id = null, value, fn } = options;
+
     $("#app").empty();
     this.btn = document.createElement("input");
     this.btn.setAttribute("type", "button");
